@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int N, acessos = 0, dias_passados = 0, acessos_no_dia;
+    
+    scanf("%d",&N);
+    
+    while(acessos < 1000000){
+        scanf("%d",&acessos_no_dia);
+        acessos += acessos_no_dia;
+        ++dias_passados;
+    }
+
+printf("%d\n",dias_passados);
+    
+    return 0;
+}
