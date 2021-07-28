@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int n;
+    scanf("%d", &n);
+    
+    int numeros_lidos = 0;
+    
+    while(numeros_lidos < n){
+        double numero;
+        scanf("%lf", &numero);
+        printf("%.4lf\n",sqrt(numero));
+        ++numeros_lidos;
+    }
+    
+    
+    return 0;
+}
